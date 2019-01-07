@@ -1,5 +1,6 @@
 FROM kabili207/rtl-sdr:latest
-MAINTAINER Andrew Nagle <kabili@zyrenth.com>
+LABEL author="Amy Nagle <kabi-dock@zyrenth.com>"
+LABEL maintainer="Amy Nagle <kabi-dock@zyrenth.com>"
 
 RUN apk add --no-cache libusb ncurses git build-base libusb-dev ncurses-dev && \
     git clone https://github.com/flightaware/dump1090.git /tmp/dump1090 && \
